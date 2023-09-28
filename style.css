@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Lexend Deca";
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  width: 800px;
+  height: 65vh;
+}
+.card .col1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 50px;
+}
+.card .col2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 50px;
+}
+.card .col3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 50px;
+}
+div h1 {
+  padding-top: 20px;
+  font-size: 30px;
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+}
+div p {
+  padding-top: 20px;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+}
+button {
+  margin-top: 70px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px;
+  border-radius: 9999px;
+  width: 130px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+}
+.col1 button {
+  color: hsl(31, 77%, 52%);
+}
+.col2 button {
+  color: hsl(184, 100%, 22%);
+}
+.col3 button {
+  color: hsl(179, 100%, 13%);
+}
+button:hover {
+  border: 1px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin: auto;
+  }
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+    height: 70vh;
+  }
+  .card .col1 {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+  }
+  .card .col3 {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+}
